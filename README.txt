@@ -1,0 +1,1 @@
+This is a Codecademy project to practice using the command line. I navigate a filesystem for a fake language-learning company, add and delete files, and make other changes using redirections, manipulations, and the terminal environment.
