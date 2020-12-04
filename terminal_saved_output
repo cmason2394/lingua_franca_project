@@ -1,0 +1,1150 @@
+Last login: Thu Dec  3 16:44:58 on ttys000
+Cassis-MacBook-Pro:~ cassimason$ cd documents/coding/Projects/lingua-franca-project/lingua-franca
+Cassis-MacBook-Pro:lingua-franca cassimason$ wc */*.txt | grep 0 > todo/empty_files.txt
+Cassis-MacBook-Pro:lingua-franca cassimason$ cat todo/empty_files.txt
+       0       0       0 africa/afrihili.txt
+       1       6      50 asia/arabic.txt
+       0       0       0 asia/bengali.txt
+       0       0       0 asia/chinese.txt
+       0       0       0 asia/hebrew.txt
+       0       0       0 asia/hindi.txt
+       0       0       0 asia/japanese.txt
+       0       0       0 asia/punjabi.txt
+       0       0       0 europe/french.txt
+       0       0       0 europe/german.txt
+       0       0       0 europe/italian.txt
+       0       0       0 europe/russian.txt
+       0       0       0 europe/spanish.txt
+       0       0       0 europe/yiddish.txt
+       0       0       0 northamerica/french.txt
+       0       0       0 northamerica/spanish.txt
+       0       0       0 southamerica/spanish.txt
+       9       9     102 todo/asian_language_files.txt
+       0       0       0 todo/empty_files.txt
+Cassis-MacBook-Pro:lingua-franca cassimason$ rm empty_files.txt
+rm: empty_files.txt: No such file or directory
+Cassis-MacBook-Pro:lingua-franca cassimason$ wc -w */*.txt | grep 0 > todo/empty_files.txt
+Cassis-MacBook-Pro:lingua-franca cassimason$ cat todo/empty_files.txt
+       0 africa/afrihili.txt
+       0 asia/bengali.txt
+       0 asia/chinese.txt
+       0 asia/hebrew.txt
+       0 asia/hindi.txt
+       0 asia/japanese.txt
+       0 asia/punjabi.txt
+       0 europe/french.txt
+       0 europe/german.txt
+       0 europe/italian.txt
+       0 europe/russian.txt
+       0 europe/spanish.txt
+       0 europe/yiddish.txt
+       0 northamerica/french.txt
+       0 northamerica/spanish.txt
+       0 southamerica/spanish.txt
+       0 todo/empty_files.txt
+Cassis-MacBook-Pro:lingua-franca cassimason$ sed 's/Lingua-Franca/Lingua Franca/g' */*.txt
+Welkom by die Lingua Franca vertaaldienste
+mrhbana bikum fi khadamat tarjamat Lingua Franca.
+여보세요
+Selamat datang ke perkhidmatan terjemahan Lingua Franca.
+Berikut adalah beberapa perkataan dalam bahasa Melayu:
+Helo
+Selamat tinggal
+Apa khabar?
+Welcome to the Lingua Franca translation services. 
+Bem-vindo aos serviços de tradução Lingua Franca.
+Welcome to the Lingua Franca translation services. 
+Bem-vindo aos serviços de tradução Lingua Franca.
+arabic.txt
+bengali.txt
+chinese.txt
+hebrew.txt
+hindi.txt
+japanese.txt
+korean.txt
+malay.txt
+punjabi.txt
+       0 africa/afrihili.txt
+       0 asia/bengali.txt
+       0 asia/chinese.txt
+       0 asia/hebrew.txt
+       0 asia/hindi.txt
+       0 asia/japanese.txt
+       0 asia/punjabi.txt
+       0 europe/french.txt
+       0 europe/german.txt
+       0 europe/italian.txt
+       0 europe/russian.txt
+       0 europe/spanish.txt
+       0 europe/yiddish.txt
+       0 northamerica/french.txt
+       0 northamerica/spanish.txt
+       0 southamerica/spanish.txt
+       0 todo/empty_files.txt
+Cassis-MacBook-Pro:lingua-franca cassimason$ grep -Rl 'Lingua-Franca' */*.txt | wc -l
+       6
+Cassis-MacBook-Pro:lingua-franca cassimason$ sed -i 's/Lingua-Franca/Lingua Franca/g' */*.txt
+sed: 1: "africa/afrihili.txt": command a expects \ followed by text
+Cassis-MacBook-Pro:lingua-franca cassimason$ grep -Rl 'Lingua-Franca' */*.txt | wc -l
+       6
+Cassis-MacBook-Pro:lingua-franca cassimason$ grep -R1 'Lingua-Franca' */*.txt | wc -1
+wc: illegal option -- 1
+usage: wc [-clmw] [file ...]
+Cassis-MacBook-Pro:lingua-franca cassimason$ nano ~/.bash_profile
+Cassis-MacBook-Pro:lingua-franca cassimason$ source ~/.bash_profile
+Hello Hola Salut
+Cassis-MacBook-Pro:lingua-franca cassimason$ nano ~/.bash_profile
+Cassis-MacBook-Pro:lingua-franca cassimason$ source ~./bash_profile
+-bash: ~./bash_profile: No such file or directory
+Cassis-MacBook-Pro:lingua-franca cassimason$ source ~/.bash_profile
+Hello Hola Salut
+Cassis-MacBook-Pro:lingua-franca cassimason$ md
+usage: mkdir [-pv] [-m mode] directory ...
+Cassis-MacBook-Pro:lingua-franca cassimason$ md test
+Cassis-MacBook-Pro:lingua-franca cassimason$ ls
+africa		europe		southamerica	todo
+asia		northamerica	test		world
+Cassis-MacBook-Pro:lingua-franca cassimason$ rm test
+rm: test: is a directory
+Cassis-MacBook-Pro:lingua-franca cassimason$ ls
+africa		europe		southamerica	todo
+asia		northamerica	test		world
+Cassis-MacBook-Pro:lingua-franca cassimason$ rm -r test
+Cassis-MacBook-Pro:lingua-franca cassimason$ d
+Thu  3 Dec 2020 17:19:09 MST
+Cassis-MacBook-Pro:lingua-franca cassimason$ hy
+   24  git push -u origin master
+   25  echo "This is my first git or github file. I learned how to connect git and Github with it. 
+   26  Useful tips and tricks: 
+   27  1. if the terminal is blinking ":" instead of "$" when in git and won't let me type, try pressing "q"." >> README.txt
+   28  git diff
+   29  git add README.txt
+   30  git commit -m "Purpose statement and start tips and tricks"
+   31  git log
+   32  clear
+   33  pwd
+   34  cd ..
+   35  cd documents
+   36  cd documents/
+   37  cd Documents
+   38  ls
+   39  cd ..
+   40  cd documents
+   41  ls
+   42  mkdir Insurance/
+   43  mv IDCard_663W04468_20.pdf InsuranceIDCard_2018_LM.pdf InsuranceMedicaidApplication2020.pdf Insurance/
+   44  ls Insurance/
+   45  cp ID_Card_663W04468_20.pdf
+   46  cp IDCard_663W04468_20.pdf Insurance/
+   47  pwd
+   48  cd Insurance/
+   49  help
+   50  rename
+   51  ls
+   52  mv Insurance/IDCard_663W04468_20.pdf Insurance/AnthemInsuranceCard2020.jpeg
+   53  cd ..
+   54  cd ..
+   55  ls
+   56  cd documents
+   57  ls
+   58  mv questroommateschat.jpg blueoysterfamilydinner2019.JPG brokewristERsummary2018.jpg Cassi_and_Casey_NC_kids.jpeg Pictures/
+   59  ls Pictures/
+   60  mv questroommateschat.jpg Cassis-Macbook-Pro/Pictures/
+   61  cd ~
+   62  mv questroommateschat.jpg Pictures/
+   63  cd Photos Library
+   64  cd Photos_Library
+   65  Photos
+   66  cd Photos
+   67  ls/desktop/Screen Shot 2020-03-24
+   68  ls/desktop/Screen_Shot_2020-03-24
+   69  ls/desktop/Organicspads
+   70  cd desktop
+   71  ls
+   72  cat Organicspads.png
+   73  cd desktop
+   74  ls
+   75  mv *git*.png ~/documents/coding
+   76  ls ~/documents/coding
+   77  mv -i Backtrack_in_Git.png find_and_replace_command_line.png ~/documents/coding
+   78  rm *-shm
+   79  rm *Screen Shot
+   80  rm *Screen_Shot.png
+   81  rm *Screen Shot.png
+   82  rm *Screen Shot*
+   83  cd ~/documents
+   84  ls
+   85  mv ~/desktop/unemploymentdirectdeposit.png Finances/
+   86  mv ~/desktop/*png documents/
+   87  cd ~/desktop
+   88  mv *png ~/documents
+   89  cd ~/documents
+   90  ls
+   91  mkdir JPEGs
+   92  mv *jpeg JPEGs/
+   93  ls
+   94  ls JPEGs
+   95  mv *jpg JPEGs
+   96  ls JPEGs
+   97  mkdir PDFs
+   98  mv *pdf
+   99  mv *pdf PDFs
+  100  ls PDFs/
+  101  ls
+  102  mv *JPG JPEGs
+  103  ls
+  104  mv *europereconciliation Finances/
+  105  mv *europereconciliation.xlsx Finances
+  106  ls Finances
+  107  cd Finances
+  108  cat europereconciliation.xlsx
+  109  clear
+  110  cd ..
+  111  ls
+  112  cd JPEGs
+  113  ls
+  114  mkdir Recipes
+  115  mv *sourdough* Recipes
+  116  ls Recipes
+  117  mkdir Pictures
+  118  mv blueoysterfamilydinner2019.JPG questroommateschat.jpg Pictures
+  119  mv Cassi and Casey NC kids.jpg Pictures
+  120  mv Cassi_and_Casey_NC_kids.jpg Pictures
+  121  mv *Casey Pictures
+  122  mv *Casey* Pictures
+  123  ls Pictures
+  124  mv *Casey* Cassi_and_Casey_NC_kids.jpg/Pictures
+  125  cd Pictures
+  126  mv *Casey* Cassi_and_Casey_NC_kids.jpg
+  127  ls
+  128  cd ..
+  129  ls
+  130  mkdir Health_Records
+  131  mv *Vaccine* brokewristERsummary2018.jpg Health_Records
+  132  cd ../PDFs
+  133  ls
+  134  mkdir Official_Documents_and_Records
+  135  mv policereportstolenbikeoriginal.pdf passportCassi.pdf census2020.pdf PowerofAttorneyMay2018.pdf *Police* CassiMasondriverslicense2020.pdf Official_Documents_and_Records
+  136  mv 2018electionballot.pdf Official_Documents_and_Records
+  137  rm *Spirit Airlines.pdf*
+  138  rm *Airlines.pdf
+  139  mv FortCollinsBikeCoopQuick_Start_guide.pdf Volunteering
+  140  mv Volunteering FortCollinsBikeCoopQuick_Start_guide.pdf
+  141  cd ..
+  142  mv FortCollinsBikeCoopQuick_Start_guide.pdf/PDFs Volunteering/
+  143  ls Volunteering
+  144  cd PDFs
+  145  rm VitalantFastTrackTicketblooddonation04:20.pdf
+  146  ls
+  147  mv *Blueberries* ~/documents/JPEGs/Recipes
+  148  ls ~/documents/JPEGs/Recipes
+  149  cd ../JPEGs
+  150  ls
+  151  cp -r -n ~/documents/JPEGs/* ~/documents/
+  152  ls 
+  153  ls ~/documents
+  154  cd ..
+  155  ls Pictures
+  156  ls Recipes
+  157  rm JPEGs
+  158  mv -i *drivers* Pictures/drivers_license_Quest_id_2013.pdf
+  159  mv -i college_friends_group_chat_screenshot.png Pictures/
+  160  ls Pictures
+  161  ls
+  162  ls Quest
+  163  ls -l Quest/Fourth_year
+  164  cd Quest
+  165  ls
+  166  ls -l
+  167  ls -alt
+  168  cd *Fourth
+  169  mv *Fourth* Fourth_year
+  170  ls
+  171  mv *Fifth* Fifth_year
+  172  mv *Sailing* Sailing_Club
+  173  mv *Calculus* Calculus_3rd_year
+  174  mv *Chemistry* Chemistry_3rd_year
+  175  ls
+  176  cd Fourth_year
+  177  ls -alt
+  178  ls
+  179  mv -i *sailing* ~/documents/Quest/Sailing_club/
+  180  ls
+  181  ls ~/documents/Quest/Sailing_club
+  182  ls
+  183  cd ../../
+  184  ls
+  185  rm -r JPEGs
+  186  ls
+  187  ditto Pictures/ ~/Applications/Photos
+  188  ls
+  189  mkdir CSU_Chemistry_internship/
+  190  cd PDFs
+  191  ls -alt
+  192  cat MASON_CASSANDRA_SSNCORRECTION.pdf
+  193  1;2c1;2c1;2c1;2c1;2c
+  194  clear
+  195  ls
+  196  rm *LabCorp*
+  197  mv -i MASON_CASSANDRA_SSNCORRECTION.pdf Official_Documents_and_Records/cassipassport.pdf
+  198  cd ..
+  199  mkdir Activities
+  200  mv Organicspads.png Activities/
+  201  ls
+  202  mv aspenlostboardthankyoulettertonewspaper.docx Activities/
+  203  cd PDFs
+  204  ls
+  205  mv *Aerialist's* ~/documents/Activities
+  206  esc
+  207  clear
+  208  q
+  209  cd PDFs
+  210  cd documents
+  211  cd PDFs
+  212  ls
+  213  mv -i *Physique.pdf ~/documents/Activities/AerialSilks_athomeworkout_AerialPhysique.pdf
+  214  mv -i *Life.pdf ~/documents/Activities/AvalancheRescue.pdf
+  215  mv -i *Lazy* ~/documents/Activities/LazyRiverBeanie_AllFreeKnitting.pdf
+  216  ls
+  217  cd ..
+  218  mv *Wave* Quest/Fourth_year/Physics
+  219  mv *lab* Quest/Fourth_year/Physics
+  220  mv BindingEnergyCalculations.xlsx CSU_Chemistry_internship
+  221  cd Quest/Fourth_year/Physics
+  222  ls -alt
+  223  mv *Wave* *1*/Wavelab_data.xlsx
+  224  mv *1/ Physics1/
+  225  mv *III/ Physics3
+  226  mv *Wave* Physics1/wavelab_data.xlsx
+  227  cd ../../../
+  228  mkdir Others_creations
+  229  ls
+  230  mv *community.m4a Others_creations/Emily_soundbite_community.m4a
+  231  cd PDFs
+  232  ls
+  233  mv *Chris.pdf ~/documents/Others_creations/Ode_to_Greyrock_byChris.pdf
+  234  mv -i *blog.pdf ~/documents/Others_creations/Rader-Stark_Franceblog.pdf
+  235  mv -i computersecuritystrongestlinkdosanddonts.pdf ~/documents
+  236  mv -rn PDFs ~/documents
+  237  cd ..
+  238  mv -r -n PDFs ~/documents
+  239  cp -rn PDFs ~/documents
+  240  cp -rn ~/documents
+  241  clear
+  242  cp -rn PDFs/* ~/documents
+  243  ls
+  244  rm -r PDFs 
+  245  ls
+  246  mv ChemDraw/* CSU_Chemistry_internship
+  247  ls
+  248  ls CSU_Chemistry_internship
+  249  mv ChemDraw CSU_Chemistry_internship
+  250  ls -alt
+  251  cd ~/.bash_profile
+  252  source ~/.bash_profile
+  253  cd documents/coding
+  254  ls
+  255  mkdir cheatsheets/
+  256  mv *.png cheatsheets/
+  257  ls
+  258  ls cheatsheets
+  259  cd desktop
+  260  ls
+  261  mv *Screen* ~/documents/coding/cheatsheets
+  262  cd ../documents/coding/cheatsheets
+  263  ls
+  264  mv *5.59.09* PushwebsitetoGitHub.png
+  265  mv *6.00.00* Jekyll_Staticwebsite.png
+  266  ls
+  267  cat jekyll_Staticwebsite.png
+  268  clear
+  269  pwd
+  270  ls
+  271  ls -lt
+  272  cd ../
+  273  cd ../
+  274  cd ~/desktop/
+  275  ls
+  276  cd terminaltesting
+  277  ls
+  278  cat hello_cli.txt
+  279  echo "Mila is amazing" >> hello_cli.txt
+  280  cat hello_cli.txt
+  281  cd desktop
+  282  mv *Screen* ~/documents/coding/cheatsheets/sql_usagefunnels.png
+  283  cd ~/documents/coding/cheatsheets
+  284  ls
+  285  clear
+  286  cd ~
+  287  sqlite 3 newdb.sqlite
+  288  ls
+  289  cd Downloads
+  290  ls
+  291  cd sqlite-tools-osx-xB6-3310100.zip
+  292  cd ~
+  293  cd desktop
+  294  ls
+  295  sqlite3 sql-population-queries-part-ii-starting
+  296  sqlite3 population_queries.sql
+  297  sqlite3 population_queries.sql
+  298  pwd
+  299  cd documents
+  300  ls
+  301  mv requestpayment4:26-5:09.pdf Finances/MyUIPaymentrequests
+  302  clear
+  303  ls
+  304  mv *+SQL.pdf Coding/
+  305  ls Coding/
+  306  clear
+  307  ls
+  308  mv *.xlsx Coding/projects
+  309  ls coding
+  310  clear
+  311  pwd
+  312  ls
+  313  cd Documents/Coding/Projects
+  314  pwd
+  315  ls
+  316  ls Dasmoto's
+  317  ls
+  318  ls
+  319  ls
+  320  clear
+  321  pwd
+  322  cd ..
+  323  clear
+  324  ls
+  325  cd Dasmoto's
+  326  ls
+  327  ls Dasmoto's
+  328  clear
+  329  ls DevProject
+  330  cd dasmotos
+  331  cd Dasmotos
+  332  cd ..
+  333  pwd
+  334  ls
+  335  clear
+  336  pwd
+  337  cd Documents/Coding
+  338  cd ..
+  339  cd/Coding
+  340  ls
+  341  cd Coding
+  342  ls
+  343  mkdir test
+  344  ls
+  345  cd test
+  346  echo "Hello Command Line" >> hello_cli.txt
+  347  ls
+  348  cat hello_cli.txt
+  349  clear
+  350  pwd
+  351  cd ../../resumes/
+  352  ls
+  353  cd../coding/
+  354  cd ..
+  355  ls
+  356  cd Coding
+  357  ls
+  358  cd Projects
+  359  ls
+  360  mkdir Tea_Cozy_Flexbox
+  361  ls
+  362  cd Tea_Cozy_Flexbox
+  363  mkdir resources
+  364  mkdir resources/images
+  365  ls
+  366  cd resources
+  367  ls
+  368  touch style.css
+  369  ls
+  370  cd ..
+  371  ls
+  372  touch index.html
+  373  ls
+  374  cd ..
+  375  ls
+  376  mv cc_logo.ico /HelloWorld
+  377  cd HelloWorld
+  378  mv cc_logo.ico
+  379  ls
+  380  mv cc_logo.ico HelloWorld/
+  381  ls
+  382  mv cc_logo.ico HelloWorld
+  383  cd ..
+  384  mv cc_logo.ico HelloWorld/
+  385  ls HelloWorld/
+  386  clear
+  387  cd ../../
+  388  pwd
+  389  cd downloads/lingua-franca/
+  390  cd ../downloads/lingua-franca/
+  391  cd downloads
+  392  cd ../downloads
+  393  ls
+  394  cd lingua-franca-project/
+  395  pwd
+  396  ls
+  397  cd lingua-franca
+  398  ls
+  399  mkdir world/
+  400  ls
+  401  touch world/esperanto.txt
+  402  ls world
+  403  ls -alt
+  404  ls europe/
+  405  mv europe/chinese.txt asia/
+  406  ls asia
+  407  ls europe/
+  408  ls
+  409  cp spanish.txt europe/ northamerica/ southamerica/
+  410  cp spanish.txt europe/
+  411  ls europe/
+  412  cp spanish.txt northamerica/
+  413  cp spanish.txt southamerica/
+  414  rm spanish.txt
+  415  ls
+  416  ls todo/*
+  417  mv todo/africa/* africa/
+  418  ls africa
+  419  ls todo
+  420  ls todo/*
+  421  mv todo/asia/* asia/
+  422  mv todo/europe/* europe/
+  423  ls asia
+  424  ls europe
+  425  ls todo/*
+  426  rm -r todo
+  427  ls
+  428  ls asia/ > asian_language_files.txtls
+  429  ls
+  430  mkdir todo/
+  431  rm asian_language_files.txtls
+  432  ls
+  433  ls asia/* > todo/asian_language_files.txt
+  434  ls
+  435  ls todo/*
+  436  ls todo/
+  437  cat asian_language_files.txt
+  438  cat asian_language_files.txt
+  439  cd todo
+  440  cat asian_language_files.txt
+  441  cd ../africa
+  442  echo "Welkom by die Lingua Franca vertaaldienste" > afrikaans.txt
+  443  cat afrikaans.txt
+  444  cd ..
+  445  wc | grep -Rl 0 *.txt > todo/empty_files.txt
+  446  pwd
+  447  cd downloads/lingua-franca-project
+  448  ls
+  449  mv lingua-franca-project ../documents/coding/projects
+  450  cd documents/coding/projects
+  451  cd documents
+  452  cd ../
+  453  cd documents/coding/projects
+  454  echo $HOME
+  455  echo $PATH
+  456  cd ../
+  457  ls
+  458  cd Documents
+  459  cd coding/projects
+  460  mv ../../../downloads/lingua-franca-project projects/
+  461  ls
+  462  cd ../../../downloads
+  463  mv lingua-franca-project ../Documents/coding/projects/
+  464  cd ../Documents/coding/Projects
+  465  ls
+  466  cd lingua-franca-project
+  467  ls
+  468  cd lingua-franca
+  469  ls
+  470  ls todo
+  471  ls todo/*
+  472  ls
+  473  mkdir world/
+  474  ls -alt
+  475  ls europe/
+  476  mv chinese.txt asia/
+  477  mv europe/chinese.txt asia/
+  478  ls
+  479  cp spanish.txt europe/
+  480  cp spanish.txt northamerica/
+  481  cp spanish.txt southamerica/
+  482  rm spanish.txt
+  483  ls
+  484  ls europe/
+  485  ls todo/*
+  486  cp todo/asia/* asia/
+  487  cp todo/africa/* africa/
+  488  cp todo/europe/* europe/
+  489  rm -r todo/*
+  490  ls todo/
+  491  ls asia
+  492  ls asia/ > todo/asian_language_files.txt
+  493  cat todo/asian_language_files.txt
+  494  echo "Welkom by die Lingua Franca vertaaldienste" > africa/afrikaans.txt
+  495  cat africa/afrikaans.txt
+  496  wc *.txt | grep -Rl 0 > todo/empty_files.txt
+  497  wc lingua-franca/*/*.txt | grep 0 >todo/empty_files.txt
+  498  wc asia/arabic.txt
+  499  wc | grep -Rl 0 ~/lingua-franca/ > todo/empty_files.txt
+  500  cd documents/coding/Projects/lingua-franca-project/lingua-franca
+  501  wc */*.txt | grep 0 > todo/empty_files.txt
+  502  cat todo/empty_files.txt
+  503  rm empty_files.txt
+  504  wc -w */*.txt | grep 0 > todo/empty_files.txt
+  505  cat todo/empty_files.txt
+  506  sed 's/Lingua-Franca/Lingua Franca/g' */*.txt
+  507  grep -Rl 'Lingua-Franca' */*.txt | wc -l
+  508  sed -i 's/Lingua-Franca/Lingua Franca/g' */*.txt
+  509  grep -Rl 'Lingua-Franca' */*.txt | wc -l
+  510  grep -R1 'Lingua-Franca' */*.txt | wc -1
+  511  nano ~/.bash_profile
+  512  source ~/.bash_profile
+  513  nano ~/.bash_profile
+  514  source ~./bash_profile
+  515  source ~/.bash_profile
+  516  md
+  517  md test
+  518  ls
+  519  rm test
+  520  ls
+  521  rm -r test
+  522  d
+  523  hy
+Cassis-MacBook-Pro:lingua-franca cassimason$ clear
+
+Cassis-MacBook-Pro:lingua-franca cassimason$ nano ~/.bash_profile
+Cassis-MacBook-Pro:lingua-franca cassimason$ source ~/.bash_profile
+Hello Hola Salut
+>>> d
+Thu  3 Dec 2020 17:20:42 MST
+>>> hy
+   29  git add README.txt
+   30  git commit -m "Purpose statement and start tips and tricks"
+   31  git log
+   32  clear
+   33  pwd
+   34  cd ..
+   35  cd documents
+   36  cd documents/
+   37  cd Documents
+   38  ls
+   39  cd ..
+   40  cd documents
+   41  ls
+   42  mkdir Insurance/
+   43  mv IDCard_663W04468_20.pdf InsuranceIDCard_2018_LM.pdf InsuranceMedicaidApplication2020.pdf Insurance/
+   44  ls Insurance/
+   45  cp ID_Card_663W04468_20.pdf
+   46  cp IDCard_663W04468_20.pdf Insurance/
+   47  pwd
+   48  cd Insurance/
+   49  help
+   50  rename
+   51  ls
+   52  mv Insurance/IDCard_663W04468_20.pdf Insurance/AnthemInsuranceCard2020.jpeg
+   53  cd ..
+   54  cd ..
+   55  ls
+   56  cd documents
+   57  ls
+   58  mv questroommateschat.jpg blueoysterfamilydinner2019.JPG brokewristERsummary2018.jpg Cassi_and_Casey_NC_kids.jpeg Pictures/
+   59  ls Pictures/
+   60  mv questroommateschat.jpg Cassis-Macbook-Pro/Pictures/
+   61  cd ~
+   62  mv questroommateschat.jpg Pictures/
+   63  cd Photos Library
+   64  cd Photos_Library
+   65  Photos
+   66  cd Photos
+   67  ls/desktop/Screen Shot 2020-03-24
+   68  ls/desktop/Screen_Shot_2020-03-24
+   69  ls/desktop/Organicspads
+   70  cd desktop
+   71  ls
+   72  cat Organicspads.png
+   73  cd desktop
+   74  ls
+   75  mv *git*.png ~/documents/coding
+   76  ls ~/documents/coding
+   77  mv -i Backtrack_in_Git.png find_and_replace_command_line.png ~/documents/coding
+   78  rm *-shm
+   79  rm *Screen Shot
+   80  rm *Screen_Shot.png
+   81  rm *Screen Shot.png
+   82  rm *Screen Shot*
+   83  cd ~/documents
+   84  ls
+   85  mv ~/desktop/unemploymentdirectdeposit.png Finances/
+   86  mv ~/desktop/*png documents/
+   87  cd ~/desktop
+   88  mv *png ~/documents
+   89  cd ~/documents
+   90  ls
+   91  mkdir JPEGs
+   92  mv *jpeg JPEGs/
+   93  ls
+   94  ls JPEGs
+   95  mv *jpg JPEGs
+   96  ls JPEGs
+   97  mkdir PDFs
+   98  mv *pdf
+   99  mv *pdf PDFs
+  100  ls PDFs/
+  101  ls
+  102  mv *JPG JPEGs
+  103  ls
+  104  mv *europereconciliation Finances/
+  105  mv *europereconciliation.xlsx Finances
+  106  ls Finances
+  107  cd Finances
+  108  cat europereconciliation.xlsx
+  109  clear
+  110  cd ..
+  111  ls
+  112  cd JPEGs
+  113  ls
+  114  mkdir Recipes
+  115  mv *sourdough* Recipes
+  116  ls Recipes
+  117  mkdir Pictures
+  118  mv blueoysterfamilydinner2019.JPG questroommateschat.jpg Pictures
+  119  mv Cassi and Casey NC kids.jpg Pictures
+  120  mv Cassi_and_Casey_NC_kids.jpg Pictures
+  121  mv *Casey Pictures
+  122  mv *Casey* Pictures
+  123  ls Pictures
+  124  mv *Casey* Cassi_and_Casey_NC_kids.jpg/Pictures
+  125  cd Pictures
+  126  mv *Casey* Cassi_and_Casey_NC_kids.jpg
+  127  ls
+  128  cd ..
+  129  ls
+  130  mkdir Health_Records
+  131  mv *Vaccine* brokewristERsummary2018.jpg Health_Records
+  132  cd ../PDFs
+  133  ls
+  134  mkdir Official_Documents_and_Records
+  135  mv policereportstolenbikeoriginal.pdf passportCassi.pdf census2020.pdf PowerofAttorneyMay2018.pdf *Police* CassiMasondriverslicense2020.pdf Official_Documents_and_Records
+  136  mv 2018electionballot.pdf Official_Documents_and_Records
+  137  rm *Spirit Airlines.pdf*
+  138  rm *Airlines.pdf
+  139  mv FortCollinsBikeCoopQuick_Start_guide.pdf Volunteering
+  140  mv Volunteering FortCollinsBikeCoopQuick_Start_guide.pdf
+  141  cd ..
+  142  mv FortCollinsBikeCoopQuick_Start_guide.pdf/PDFs Volunteering/
+  143  ls Volunteering
+  144  cd PDFs
+  145  rm VitalantFastTrackTicketblooddonation04:20.pdf
+  146  ls
+  147  mv *Blueberries* ~/documents/JPEGs/Recipes
+  148  ls ~/documents/JPEGs/Recipes
+  149  cd ../JPEGs
+  150  ls
+  151  cp -r -n ~/documents/JPEGs/* ~/documents/
+  152  ls 
+  153  ls ~/documents
+  154  cd ..
+  155  ls Pictures
+  156  ls Recipes
+  157  rm JPEGs
+  158  mv -i *drivers* Pictures/drivers_license_Quest_id_2013.pdf
+  159  mv -i college_friends_group_chat_screenshot.png Pictures/
+  160  ls Pictures
+  161  ls
+  162  ls Quest
+  163  ls -l Quest/Fourth_year
+  164  cd Quest
+  165  ls
+  166  ls -l
+  167  ls -alt
+  168  cd *Fourth
+  169  mv *Fourth* Fourth_year
+  170  ls
+  171  mv *Fifth* Fifth_year
+  172  mv *Sailing* Sailing_Club
+  173  mv *Calculus* Calculus_3rd_year
+  174  mv *Chemistry* Chemistry_3rd_year
+  175  ls
+  176  cd Fourth_year
+  177  ls -alt
+  178  ls
+  179  mv -i *sailing* ~/documents/Quest/Sailing_club/
+  180  ls
+  181  ls ~/documents/Quest/Sailing_club
+  182  ls
+  183  cd ../../
+  184  ls
+  185  rm -r JPEGs
+  186  ls
+  187  ditto Pictures/ ~/Applications/Photos
+  188  ls
+  189  mkdir CSU_Chemistry_internship/
+  190  cd PDFs
+  191  ls -alt
+  192  cat MASON_CASSANDRA_SSNCORRECTION.pdf
+  193  1;2c1;2c1;2c1;2c1;2c
+  194  clear
+  195  ls
+  196  rm *LabCorp*
+  197  mv -i MASON_CASSANDRA_SSNCORRECTION.pdf Official_Documents_and_Records/cassipassport.pdf
+  198  cd ..
+  199  mkdir Activities
+  200  mv Organicspads.png Activities/
+  201  ls
+  202  mv aspenlostboardthankyoulettertonewspaper.docx Activities/
+  203  cd PDFs
+  204  ls
+  205  mv *Aerialist's* ~/documents/Activities
+  206  esc
+  207  clear
+  208  q
+  209  cd PDFs
+  210  cd documents
+  211  cd PDFs
+  212  ls
+  213  mv -i *Physique.pdf ~/documents/Activities/AerialSilks_athomeworkout_AerialPhysique.pdf
+  214  mv -i *Life.pdf ~/documents/Activities/AvalancheRescue.pdf
+  215  mv -i *Lazy* ~/documents/Activities/LazyRiverBeanie_AllFreeKnitting.pdf
+  216  ls
+  217  cd ..
+  218  mv *Wave* Quest/Fourth_year/Physics
+  219  mv *lab* Quest/Fourth_year/Physics
+  220  mv BindingEnergyCalculations.xlsx CSU_Chemistry_internship
+  221  cd Quest/Fourth_year/Physics
+  222  ls -alt
+  223  mv *Wave* *1*/Wavelab_data.xlsx
+  224  mv *1/ Physics1/
+  225  mv *III/ Physics3
+  226  mv *Wave* Physics1/wavelab_data.xlsx
+  227  cd ../../../
+  228  mkdir Others_creations
+  229  ls
+  230  mv *community.m4a Others_creations/Emily_soundbite_community.m4a
+  231  cd PDFs
+  232  ls
+  233  mv *Chris.pdf ~/documents/Others_creations/Ode_to_Greyrock_byChris.pdf
+  234  mv -i *blog.pdf ~/documents/Others_creations/Rader-Stark_Franceblog.pdf
+  235  mv -i computersecuritystrongestlinkdosanddonts.pdf ~/documents
+  236  mv -rn PDFs ~/documents
+  237  cd ..
+  238  mv -r -n PDFs ~/documents
+  239  cp -rn PDFs ~/documents
+  240  cp -rn ~/documents
+  241  clear
+  242  cp -rn PDFs/* ~/documents
+  243  ls
+  244  rm -r PDFs 
+  245  ls
+  246  mv ChemDraw/* CSU_Chemistry_internship
+  247  ls
+  248  ls CSU_Chemistry_internship
+  249  mv ChemDraw CSU_Chemistry_internship
+  250  ls -alt
+  251  cd ~/.bash_profile
+  252  source ~/.bash_profile
+  253  cd documents/coding
+  254  ls
+  255  mkdir cheatsheets/
+  256  mv *.png cheatsheets/
+  257  ls
+  258  ls cheatsheets
+  259  cd desktop
+  260  ls
+  261  mv *Screen* ~/documents/coding/cheatsheets
+  262  cd ../documents/coding/cheatsheets
+  263  ls
+  264  mv *5.59.09* PushwebsitetoGitHub.png
+  265  mv *6.00.00* Jekyll_Staticwebsite.png
+  266  ls
+  267  cat jekyll_Staticwebsite.png
+  268  clear
+  269  pwd
+  270  ls
+  271  ls -lt
+  272  cd ../
+  273  cd ../
+  274  cd ~/desktop/
+  275  ls
+  276  cd terminaltesting
+  277  ls
+  278  cat hello_cli.txt
+  279  echo "Mila is amazing" >> hello_cli.txt
+  280  cat hello_cli.txt
+  281  cd desktop
+  282  mv *Screen* ~/documents/coding/cheatsheets/sql_usagefunnels.png
+  283  cd ~/documents/coding/cheatsheets
+  284  ls
+  285  clear
+  286  cd ~
+  287  sqlite 3 newdb.sqlite
+  288  ls
+  289  cd Downloads
+  290  ls
+  291  cd sqlite-tools-osx-xB6-3310100.zip
+  292  cd ~
+  293  cd desktop
+  294  ls
+  295  sqlite3 sql-population-queries-part-ii-starting
+  296  sqlite3 population_queries.sql
+  297  sqlite3 population_queries.sql
+  298  pwd
+  299  cd documents
+  300  ls
+  301  mv requestpayment4:26-5:09.pdf Finances/MyUIPaymentrequests
+  302  clear
+  303  ls
+  304  mv *+SQL.pdf Coding/
+  305  ls Coding/
+  306  clear
+  307  ls
+  308  mv *.xlsx Coding/projects
+  309  ls coding
+  310  clear
+  311  pwd
+  312  ls
+  313  cd Documents/Coding/Projects
+  314  pwd
+  315  ls
+  316  ls Dasmoto's
+  317  ls
+  318  ls
+  319  ls
+  320  clear
+  321  pwd
+  322  cd ..
+  323  clear
+  324  ls
+  325  cd Dasmoto's
+  326  ls
+  327  ls Dasmoto's
+  328  clear
+  329  ls DevProject
+  330  cd dasmotos
+  331  cd Dasmotos
+  332  cd ..
+  333  pwd
+  334  ls
+  335  clear
+  336  pwd
+  337  cd Documents/Coding
+  338  cd ..
+  339  cd/Coding
+  340  ls
+  341  cd Coding
+  342  ls
+  343  mkdir test
+  344  ls
+  345  cd test
+  346  echo "Hello Command Line" >> hello_cli.txt
+  347  ls
+  348  cat hello_cli.txt
+  349  clear
+  350  pwd
+  351  cd ../../resumes/
+  352  ls
+  353  cd../coding/
+  354  cd ..
+  355  ls
+  356  cd Coding
+  357  ls
+  358  cd Projects
+  359  ls
+  360  mkdir Tea_Cozy_Flexbox
+  361  ls
+  362  cd Tea_Cozy_Flexbox
+  363  mkdir resources
+  364  mkdir resources/images
+  365  ls
+  366  cd resources
+  367  ls
+  368  touch style.css
+  369  ls
+  370  cd ..
+  371  ls
+  372  touch index.html
+  373  ls
+  374  cd ..
+  375  ls
+  376  mv cc_logo.ico /HelloWorld
+  377  cd HelloWorld
+  378  mv cc_logo.ico
+  379  ls
+  380  mv cc_logo.ico HelloWorld/
+  381  ls
+  382  mv cc_logo.ico HelloWorld
+  383  cd ..
+  384  mv cc_logo.ico HelloWorld/
+  385  ls HelloWorld/
+  386  clear
+  387  cd ../../
+  388  pwd
+  389  cd downloads/lingua-franca/
+  390  cd ../downloads/lingua-franca/
+  391  cd downloads
+  392  cd ../downloads
+  393  ls
+  394  cd lingua-franca-project/
+  395  pwd
+  396  ls
+  397  cd lingua-franca
+  398  ls
+  399  mkdir world/
+  400  ls
+  401  touch world/esperanto.txt
+  402  ls world
+  403  ls -alt
+  404  ls europe/
+  405  mv europe/chinese.txt asia/
+  406  ls asia
+  407  ls europe/
+  408  ls
+  409  cp spanish.txt europe/ northamerica/ southamerica/
+  410  cp spanish.txt europe/
+  411  ls europe/
+  412  cp spanish.txt northamerica/
+  413  cp spanish.txt southamerica/
+  414  rm spanish.txt
+  415  ls
+  416  ls todo/*
+  417  mv todo/africa/* africa/
+  418  ls africa
+  419  ls todo
+  420  ls todo/*
+  421  mv todo/asia/* asia/
+  422  mv todo/europe/* europe/
+  423  ls asia
+  424  ls europe
+  425  ls todo/*
+  426  rm -r todo
+  427  ls
+  428  ls asia/ > asian_language_files.txtls
+  429  ls
+  430  mkdir todo/
+  431  rm asian_language_files.txtls
+  432  ls
+  433  ls asia/* > todo/asian_language_files.txt
+  434  ls
+  435  ls todo/*
+  436  ls todo/
+  437  cat asian_language_files.txt
+  438  cat asian_language_files.txt
+  439  cd todo
+  440  cat asian_language_files.txt
+  441  cd ../africa
+  442  echo "Welkom by die Lingua Franca vertaaldienste" > afrikaans.txt
+  443  cat afrikaans.txt
+  444  cd ..
+  445  wc | grep -Rl 0 *.txt > todo/empty_files.txt
+  446  pwd
+  447  cd downloads/lingua-franca-project
+  448  ls
+  449  mv lingua-franca-project ../documents/coding/projects
+  450  cd documents/coding/projects
+  451  cd documents
+  452  cd ../
+  453  cd documents/coding/projects
+  454  echo $HOME
+  455  echo $PATH
+  456  cd ../
+  457  ls
+  458  cd Documents
+  459  cd coding/projects
+  460  mv ../../../downloads/lingua-franca-project projects/
+  461  ls
+  462  cd ../../../downloads
+  463  mv lingua-franca-project ../Documents/coding/projects/
+  464  cd ../Documents/coding/Projects
+  465  ls
+  466  cd lingua-franca-project
+  467  ls
+  468  cd lingua-franca
+  469  ls
+  470  ls todo
+  471  ls todo/*
+  472  ls
+  473  mkdir world/
+  474  ls -alt
+  475  ls europe/
+  476  mv chinese.txt asia/
+  477  mv europe/chinese.txt asia/
+  478  ls
+  479  cp spanish.txt europe/
+  480  cp spanish.txt northamerica/
+  481  cp spanish.txt southamerica/
+  482  rm spanish.txt
+  483  ls
+  484  ls europe/
+  485  ls todo/*
+  486  cp todo/asia/* asia/
+  487  cp todo/africa/* africa/
+  488  cp todo/europe/* europe/
+  489  rm -r todo/*
+  490  ls todo/
+  491  ls asia
+  492  ls asia/ > todo/asian_language_files.txt
+  493  cat todo/asian_language_files.txt
+  494  echo "Welkom by die Lingua Franca vertaaldienste" > africa/afrikaans.txt
+  495  cat africa/afrikaans.txt
+  496  wc *.txt | grep -Rl 0 > todo/empty_files.txt
+  497  wc lingua-franca/*/*.txt | grep 0 >todo/empty_files.txt
+  498  wc asia/arabic.txt
+  499  wc | grep -Rl 0 ~/lingua-franca/ > todo/empty_files.txt
+  500  cd documents/coding/Projects/lingua-franca-project/lingua-franca
+  501  wc */*.txt | grep 0 > todo/empty_files.txt
+  502  cat todo/empty_files.txt
+  503  rm empty_files.txt
+  504  wc -w */*.txt | grep 0 > todo/empty_files.txt
+  505  cat todo/empty_files.txt
+  506  sed 's/Lingua-Franca/Lingua Franca/g' */*.txt
+  507  grep -Rl 'Lingua-Franca' */*.txt | wc -l
+  508  sed -i 's/Lingua-Franca/Lingua Franca/g' */*.txt
+  509  grep -Rl 'Lingua-Franca' */*.txt | wc -l
+  510  grep -R1 'Lingua-Franca' */*.txt | wc -1
+  511  nano ~/.bash_profile
+  512  source ~/.bash_profile
+  513  nano ~/.bash_profile
+  514  source ~./bash_profile
+  515  source ~/.bash_profile
+  516  md
+  517  md test
+  518  ls
+  519  rm test
+  520  ls
+  521  rm -r test
+  522  d
+  523  hy
+  524  clear
+  525  nano ~/.bash_profile
+  526  source ~/.bash_profile
+  527  d
+  528  hy
+>>> md translations
+>>> ls
+africa		europe		southamerica	translations
+asia		northamerica	todo		world
+>>> env
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/bash
+TERM=xterm-256color
+TMPDIR=/var/folders/sx/yhbn77hn1bx49wgdtmz9yyw80000gn/T/
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.nvx1FN5d1F/Render
+TERM_PROGRAM_VERSION=361.2
+OLDPWD=/Users/cassimason
+TERM_SESSION_ID=F97EC429-3F71-4BDE-A82C-38593EE0F718
+USER=cassimason
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.JCFkGbKR7z/Listeners
+__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+PWD=/Users/cassimason/documents/coding/Projects/lingua-franca-project/lingua-franca
+LANG=en_CA.UTF-8
+XPC_FLAGS=0x0
+PS1=>>> 
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/cassimason
+LOGNAME=cassimason
+_=/usr/bin/env
+>>> 
